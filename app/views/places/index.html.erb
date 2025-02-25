@@ -4,6 +4,10 @@
 <p> # of places: <%= places.count%> </p>
 
 <ul>
-  <% for place in places%>
-  <li> <%=place["name"]%> </li>
+  <% for place in @places%>
+  <li>
+  <a href = "/places/ <%=place["id"]%>">
+  <%= place["name"]%>
+  </li>
   <%end%>
+</ul>

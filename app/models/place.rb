@@ -1,6 +1,8 @@
 class Place < ApplicationRecord
   # talks to the "places" table
   
+  Place.destroy_all  
+
   #insert new item into places table
   new_place = Place.new
   new_place["name"] = "Mexico City"
